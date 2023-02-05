@@ -43,7 +43,7 @@ export default function LoginForm() {
     setIsLoginModalOpen(false);
     handleGoogleLogin();
   };
-  return true ? (
+  return isLoginModalOpen ? (
     <>
       <GenericModal
         variant="info"
